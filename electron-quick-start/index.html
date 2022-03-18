@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lab</title>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./styles.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+</head>
+<body>
+    <p></p>
+
+
+    <div class="ui segment">
+        <div class="ui two column very relaxed grid">
+            <div class="column">
+                <div class="ui container">
+                    <div class="ui medium label">Решение задачи<br>Коммивояжера</div>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <button class="ui primary basic button" onclick="comm()">Run</button>
+                    <button class="ui secondary basic button" onclick="document.getElementById('result_comm').value = ''">Clear</button>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <div class="ui disabled large input">
+                        <input type="text" placeholder="Result..." id="result_comm" style="width: 180px;font-size: 12px;height: 25px;">
+                    </div>
+                    <div class="ui small basic icon buttons">
+                        <button class="ui green basic button" onclick="openFile('in/comm_matrix.in')" id="button"><i class="upload icon"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ui container">
+                    <div class="ui medium label">Алгоритм<br>Краскала</div>
+                    <div class="ui medium label"><small>Если между двумя вершинами<br>нет ребра введите '909'</small></div>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <button class="ui primary basic button" onclick="krusk()">Run</button>
+                    <button class="ui secondary basic button" onclick="document.getElementById('result_krusk').value = ''">Clear</button>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <div class="ui disabled large input">
+                        <input type="text" placeholder="Result..." id="result_krusk" style="width: 180px;font-size: 12px;height: 25px;">
+                    </div>
+                    <div class="ui small basic icon buttons">
+                        <button class="ui green basic button" onclick="openFile('in/krusk_matrix.in')"><i class="upload icon"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ui container">
+                    <div class="ui medium label">Алгоритм<br>Прима</div>
+                    <div class="ui medium label"><small>Если между двумя вершинами<br>нет ребра введите '909'</small></div>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <button class="ui primary basic button" onclick="prim()">Run</button>
+                    <button class="ui secondary basic button" onclick="document.getElementById('result_prim').value = ''">Clear</button>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <div class="ui disabled large input">
+                        <input type="text" placeholder="Result..." id="result_prim" style="width: 180px;font-size: 12px;height: 25px;">
+                    </div>
+                    <div class="ui small basic icon buttons">
+                        <button class="ui green basic button" onclick="openFile('in/prim_matrix.in')"><i class="upload icon"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ui container">
+                    <div class="ui medium label">Алгоритм<br>Форда Фалкерсона</div>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <button class="ui primary basic button" onclick="ford()">Run</button>
+                    <button class="ui secondary basic button" onclick="document.getElementById('result_ford').value = ''">Clear</button>
+                </div>
+                <p></p>
+
+                <div class="ui container">
+                    <div class="ui disabled large input">
+                        <input type="text" placeholder="Result..." id="result_ford" style="width: 180px;font-size: 12px;height: 25px;">
+                    </div>
+                    <div class="ui small basic icon buttons">
+                        <button class="ui green basic button" onclick="openFile('in/ford_matrix.in')"><i class="upload icon"></i></button>
+                    </div>
+                    <div class="ui small basic icon buttons">
+                        <button class="ui blue basic button" onclick="openFile('in/s_t.in')"><i class="upload icon"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+    </script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous">
+    </script>-->
+</body>
+</html>
